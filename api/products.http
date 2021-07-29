@@ -12,7 +12,7 @@ GET {{baseUrl}}/{{resoureName}}?price_gte=900
 ###
 
 # @name pagination
-GET {{baseUrl}}/{{resoureName}}?_page=1&_limit=2
+GET {{baseUrl}}/{{resoureName}}?_page=1&_limit=3
 ###
 # @name sort
 GET {{baseUrl}}/{{resoureName}}?_sort=price&_order=desc
@@ -22,16 +22,26 @@ POST {{baseUrl}}/{{resoureName}}
 Content-Type: application/json
 
 {
-    "name": "Tung"
+"catetoryId": "aac3ba2d-56a4-4f2f-8aa9-3aecf67b78fc",
+"name": "Fantastic Metal Shirt Update",
+"color": "plum",
+"description": "Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+"price": 1006,
+"thumnailUrl": "http://placeimg.com/400/400"
 }
 
 ###
 # @name update
-PATCH   {{baseUrl}}/{{resoureName}}/2
+PATCH   {{baseUrl}}/{{resoureName}}/zaVGFXM
 Content-Type: application/json
 
 {
-    "name": "Tung dep traiu"
+  "catetoryId": "aac3ba2d-56a4-4f2f-8aa9-3aecf67b78fc",
+  "name": "Fantastic Metal Shirt Update bla ",
+  "color": "Red",
+  "description": "Back-lighting for smart functionality",
+  "price": 1006,
+  "thumnailUrl": "http://placeimg.com/400/400"
 }
 
 ###

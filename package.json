@@ -5,8 +5,8 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon main.js",
-    "start": "node gen-data.js && node main.js"
+    "dev": "node gen-data.js && nodemon main.js ",
+    "start": "node main.js"
   },
   "keywords": [
     "json-server"
@@ -14,11 +14,11 @@
   "author": "VTT",
   "license": "MIT",
   "dependencies": {
+    "faker": "^5.5.3",
     "json-server": "^0.16.3",
     "query-string": "^7.0.1"
   },
   "devDependencies": {
-    "faker": "^5.5.3",
     "nodemon": "^2.0.12"
   }
 }
